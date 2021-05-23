@@ -6,11 +6,11 @@
 
 cisla = list(range(1,101))
 for cs in cisla:
-    if cs % 3 == 0:
+    if (cs % 3 == 0) and (cs % 5 == 0):
+        print("FizzBuzz")
+    elif cs % 3 == 0:
         print("Fizz")
-        continue
     elif cs % 5 ==0:
         print("Buzz")
-        continue
     else:
         print(cs)
